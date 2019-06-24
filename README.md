@@ -40,7 +40,7 @@ Nightingale will use Discord.PY in first intance. *Wip*
 
 ## Contributors.
 
-[Raz] (https://github.com/razpeitia)
-[Rayitas] (https://github.com/R1NZLER15)
-[Akuma] (https://github.com/magumboi)
-[Rineroth] (https://github.com/jrrios)
+* [Raz](https://github.com/razpeitia)
+* [Rayitas](https://github.com/R1NZLER15)
+* [Akuma](https://github.com/magumboi)
+* [Rineroth](https://github.com/jrrios)
