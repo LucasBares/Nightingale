@@ -1,7 +1,9 @@
+import ast
 import os
 
 from discord import Game
 from discord.ext.commands import Bot
+
 
 bot = Bot(command_prefix='.')
 
@@ -13,7 +15,8 @@ async def on_ready():
 
 # Commands
 @bot.command()
-async def test(ctx):
-    await ctx.send("Test!")
+async def calc(ctx, *args):
+    result = ' '.join(args)
+    await ctx.send("Test {}".format(result))
 
 bot.run(os.environ["BOT_TOKEN"])
