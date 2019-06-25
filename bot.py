@@ -1,19 +1,22 @@
-import discord
-import vars
+import ast
 import os
 
-client = discord.Client()
+from discord import Game
+from discord.ext.commands import Bot
 
-@client.event
+
+bot = Bot(command_prefix='.')
+
+# Events
+@bot.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    await bot.change_presence(activity=Game("with humans"))
+    print("Logged in as " + bot.user.name)
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+# Commands
+@bot.command()
+async def calc(ctx, *args):
+    result = ' '.join(args)
+    await ctx.send("Test {}".format(result))
 
-    if message.content.startswith('!hello'):
-        await message.channel.send('Hello!')
-
-client.run(print(os.environ["BOT_TOKEN"]))
+bot.run(os.environ["BOT_TOKEN"])
