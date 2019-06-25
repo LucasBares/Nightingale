@@ -1,5 +1,5 @@
 import discord
-import vars
+# import vars
 import os
 
 client = discord.Client()
