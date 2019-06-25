@@ -1,3 +1,15 @@
 vars.py
 /venv
 /bot-env
+__pycache__
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+.vscode
